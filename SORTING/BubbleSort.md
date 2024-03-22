@@ -13,18 +13,21 @@
 - In this way, the largest element is moved to the rightmost end at first. 
 - This process is then continued to find the second largest and place it and so on until the data is sorted.
 
-**First Pass:** 
+<ins>***First Pass:***</ins> 
+
 The largest element is placed in its correct position, i.e., the end of the array.
 
 ![image](https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/bd5890a8-e118-40fa-a4dc-4195d34ae76f)
 
 
-**Second Pass:**
+<ins>**Second Pass:***</ins>
+
 Place the second largest element at correct position
 
 ![image](https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/c2f76fa5-fb06-4a02-a46f-f9255836573f)
 
-**Third Pass:**
+<ins>***Third Pass:***</ins>
+
 Place the remaining two elements at their correct positions.
 
 ![image](https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/92531ccd-a26c-450a-907e-a4859680b12f)
