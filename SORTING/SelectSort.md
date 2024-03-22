@@ -31,3 +31,27 @@
 * Now array will look like a = [ 1, 3, 2, 9, 5 ]
 
 ![image](https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/c789e18d-294e-4c48-b80c-be507b8ea9b8)
+
+### Complexity
+<table>
+  <tr>
+    <td><I>Time Complexity<I></td> 
+    <td>Best</td> 
+    <td>O(n^2)</td>  
+  </tr>
+  <tr>
+    <td></td>
+    <td>Average</td>
+    <td>O(n^2)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Worst</td>
+    <td>O(n^2)</td>
+  </tr>
+  <tr>
+    <td><I>Space Complexity<I></td>
+    <td>Worst</td>
+    <td>O(1)</td>
+  </tr>  
+</table>
