@@ -35,6 +35,29 @@
      
 ![image](https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/1f2e5d6c-ff72-4231-a13b-1e5953f4426f)
 
+### Complexity
+<table>
+  <tr>
+    <td><I>Time Complexity<I></td> 
+    <td>Best</td> 
+    <td>O(nLogn)</td>  
+  </tr>
+  <tr>
+    <td></td>
+    <td>Average</td>
+    <td>O(nLogn)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Worst</td>
+    <td>O(nLogn)</td>
+  </tr>
+  <tr>
+    <td><I>Space Complexity<I></td>
+    <td>Worst</td>
+    <td>O(n)</td>
+  </tr>  
+</table>
 
 ## Code
 ### Divide
