@@ -3,6 +3,9 @@
   - [Explanation](#Explanation)
     - [Complexity](#Complexity) 
   - [Code](#Code)
+    - [Divide](#Divide)
+    - [Conqure](#Conqure)
+    - [Main](#Main) 
   - [References](#references)
 
 ## Explanation
@@ -31,3 +34,76 @@
    - Now that all our subarrays are formed, it is now time to combine them in sorted order.
      
 ![image](https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/1f2e5d6c-ff72-4231-a13b-1e5953f4426f)
+
+
+## Code
+### Divide
+```Java
+public static void divide(int[] arr, int si, int ei) {
+    if (si >= ei)
+        return;
+
+    int mid = si + (ei - si) / 2; //(si + ei)/2 the addition ei + si can go beyond int range
+
+    divide(arr, si, mid);
+    divide(arr, mid + 1, ei);
+    conquer(arr, si, mid, ei);
+}
+```
+
+### Conqure
+```Java
+public static void conquer(int[] arr,int si,int mid, int ei){
+    int merged[] = new int[ei - si + 1];
+
+    int idx1 = si;
+    int idx2 = mid + 1;
+    int x = 0;
+
+    while(idx1 <= mid && idx2 <= ei)
+    {
+        if(arr[idx1] <= arr[idx2])
+        {
+            merged[x] = arr[idx1];
+            x++;
+            idx1++;
+        } else {
+            merged[x] = arr[idx2];
+            x++;
+            idx2++;
+        }
+    }
+    while(idx1 <= mid )
+    {
+        merged[x] = arr[idx1];
+        x++;
+        idx1++;
+    }
+    while(idx2 <= ei )
+    {
+        merged[x] = arr[idx2];
+        x++;
+        idx2++;
+    }
+
+    for(int i = 0,j =si; i < merged.length;i++,j++)
+    {
+        arr[j] = merged[i];
+    }
+}
+```
+
+### Main
+```Java
+MergeSort mergeSort = new MergeSort();
+int[] arr1 = {6, 3, 9, 5, 2, 8};
+n = arr1.length;
+mergeSort.divide( arr1, 0, n-1);
+for (int i = 0; i < n; i++) {
+    System.out.print(arr[i] + " ");
+}
+```
+
+## References
+* [MergeSort Scaler](https://www.scaler.com/topics/data-structures/merge-sort-algorithm/)
+* [MergeSort Scaler](https://www.scaler.com/topics/merge-sort-program-in-java/)
