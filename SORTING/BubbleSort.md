@@ -6,6 +6,8 @@
   - [References](#references)
 
 ## Explanation
+> Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted. In each pass, the largest (or smallest, depending on the sorting order) unsorted element "bubbles" up to its correct position. Bubble sort has a time complexity of O(n^2), making it inefficient for large lists but easy to understand and implement. It is primarily used for educational purposes or for sorting small datasets.
+
 - Traverse from left to right and compare adjacent elements move the higher value element to the right.
 - We perform swapping when we find that current element is larger the next element
 - In this way, the largest element is moved to the rightmost end at first. 
