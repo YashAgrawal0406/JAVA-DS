@@ -1,8 +1,9 @@
-- [Topics]()
+# Topics
+- [Topics](#Topics)
   - [Explanation]()
   - [Code](#Code)
 
-###Code
+## Code
 ```Java
 
 public static void bubbleSort() {
