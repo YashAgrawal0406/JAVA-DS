@@ -28,18 +28,28 @@ Place the remaining two elements at their correct positions.
 
 ### Complexity
 <table>
-  <tr><td>`Time Complexity`</td> <td></td> Best <td></td> O(n) </tr>
-  <tr><td></td><td></td><td></td></tr>
-  <tr><td></td><td></td><td></td></tr>
-  <tr><td></td><td></td><td></td></tr>
-  
+  <tr>
+    <td><I>Time Complexity<I></td> 
+    <td>Best</td> 
+    <td>O(n)</td>  
+  </tr>
+  <tr>
+    <td></td>
+    <td>Average</td>
+    <td>O(n^2)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Worst</td>
+    <td>O(n^2)</td>
+  </tr>
+  <tr>
+    <td><I>Space Complexity<I></td>
+    <td>Worst</td>
+    <td>O(1)</td>
+  </tr>  
 </table>
-| | |
-| --- | --- | --- |
-| `Time Complexity`	| Best | O(n)
-|  | Average | O(n^2)
-|  | Worst | O(n^2)
-| `Space Complexity` | Worst | O(1)
+
 
 ## Code
 ```Java
