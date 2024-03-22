@@ -49,3 +49,7 @@ if (index != -1) {
     System.out.println("Element " + target + " not found in the list.");
 }
 ```
+
+## References
+* [Linear Search Scaler](https://www.scaler.com/topics/data-structures/linear-search-algorithm/)
+* [Linear Search Scaler](https://www.scaler.com/topics/linear-search-in-java/)
