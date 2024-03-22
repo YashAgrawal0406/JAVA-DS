@@ -4,6 +4,8 @@
   - [Explanation](#Explanation)
     - [Complexity](#Complexity) 
   - [Code](#Code)
+    - [Linear Search](Linear-Search)
+    - [Main](Main)  
   - [References](#references)
 
 
