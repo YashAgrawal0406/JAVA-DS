@@ -35,7 +35,57 @@ Let's understand this by sorting an array of integers,
 Finally, the array is sorted completely.
 
 
+### Complexity
+<table>
+  <tr>
+    <td><I>Time Complexity<I></td> 
+    <td>Best</td> 
+    <td>O(n)</td>  
+  </tr>
+  <tr>
+    <td></td>
+    <td>Average</td>
+    <td>O(n^2)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Worst</td>
+    <td>O(n^2)</td>
+  </tr>
+  <tr>
+    <td><I>Space Complexity<I></td>
+    <td>Worst</td>
+    <td>O(1)</td>
+  </tr>  
+</table>
 
+## Code
+
+```Java
+
+public static void insertionSort() {
+    int[] arr = {7, 8, 3, 1, 2};
+
+    for (int i = 1; i < arr.length; i++) {
+        int current = arr[i];
+        int j = i - 1;
+
+        while (j >= 0 && current < arr[j]) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = current;
+    }
+    for (int i = 0; i < arr.length; i++)
+        System.out.print(arr[i] + " ");
+}
+
+```
+
+
+## References
+* [InsertionSort Scaler](https://www.scaler.com/topics/data-structures/insertion-sort/)
+* [InsertionSort Scaler](https://www.scaler.com/topics/insertion-sort-in-java/)
 
 
 
