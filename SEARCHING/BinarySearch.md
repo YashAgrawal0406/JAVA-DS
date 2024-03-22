@@ -3,6 +3,8 @@
   - [Explanation](#Explanation)
     - [Complexity](#Complexity) 
   - [Code](#Code)
+    - [Binary Search](#Binary-Search)
+    - [Main](#Main)
   - [References](#references)
 
 ## Explanation
@@ -49,6 +51,50 @@
     <td>O(1)</td>
   </tr>  
 </table>
+
+## Code
+### Binary Search
+```Java
+public static int binarySearch(int[] arr, int target) {
+    int left = 0;
+    int right = arr.length - 1;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        // Check if target is present at mid
+        if (arr[mid] == target) {
+            return mid;
+        }
+
+        // If target greater, ignore left half
+        if (arr[mid] < target) {
+            left = mid + 1;
+        }
+        // If target is smaller, ignore right half
+        else {
+            right = mid - 1;
+        }
+    }
+
+    // If target is not present in the array
+    return -1;
+}
+```
+
+
+### Main
+```Java
+int[] arr = {1, 2, 4, 5, 7, 8, 9};
+int target = 5;
+int index = binarySearch(arr, target);
+if (index != -1) {
+    System.out.println("Element " + target + " found at index " + index + ".");
+} else {
+    System.out.println("Element " + target + " not found in the list.");
+}
+```
+
 
 ## References
 * [Binary Search Scaler](https://www.scaler.com/topics/data-structures/binary-search-algorithm/)
