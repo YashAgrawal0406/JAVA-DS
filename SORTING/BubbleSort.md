@@ -1,6 +1,7 @@
 # Topics
 - [Topics](#Topics)
   - [Explanation](#Explanation)
+    - [Complexity](#Complexity) 
   - [Code](#Code)
 
 ## Explanation
@@ -24,6 +25,21 @@ Place the remaining two elements at their correct positions.
 
 ![image](https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/92531ccd-a26c-450a-907e-a4859680b12f)
 
+
+### Complexity
+<table>
+  <tr><td>`Time Complexity`</td> <td></td> Best <td></td> O(n) </tr>
+  <tr><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td></tr>
+  
+</table>
+| | |
+| --- | --- | --- |
+| `Time Complexity`	| Best | O(n)
+|  | Average | O(n^2)
+|  | Worst | O(n^2)
+| `Space Complexity` | Worst | O(1)
 
 ## Code
 ```Java
