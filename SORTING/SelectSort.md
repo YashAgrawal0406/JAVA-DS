@@ -55,3 +55,29 @@
     <td>O(1)</td>
   </tr>  
 </table>
+
+## Code
+
+```Java
+public static void selectionSort() {
+    int[] arr = {7, 8, 3, 1, 2};
+
+    for (int i = 0; i < arr.length; i++) {
+        int smallest = i;
+        for (int j = i; j < arr.length; j++) {
+            if (arr[j] < arr[smallest]) {
+                smallest = j;
+            }
+        }
+        int temp = arr[i];
+        arr[i] = arr[smallest];
+        arr[smallest] = temp;
+    }
+    for (int i = 0; i < arr.length; i++)
+        System.out.print(arr[i] + " ");
+}
+```
+
+## References
+* [SelectionSort Scaler](https://www.scaler.com/topics/data-structures/selection-sort/)
+* * [SelectionSort Scaler](https://www.scaler.com/topics/selection-sort-java/)
