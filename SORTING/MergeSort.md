@@ -4,7 +4,7 @@
     - [Complexity](#Complexity) 
   - [Code](#Code)
     - [Divide](#Divide)
-    - [Conqure](#Conqure)
+    - [Conquer](#Conquer)
     - [Main](#Main) 
   - [References](#references)
 
@@ -74,7 +74,7 @@ public static void divide(int[] arr, int si, int ei) {
 }
 ```
 
-### Conqure
+### Conquer
 ```Java
 public static void conquer(int[] arr,int si,int mid, int ei){
     int merged[] = new int[ei - si + 1];
