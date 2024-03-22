@@ -3,6 +3,7 @@
   - [Explanation](#Explanation)
     - [Complexity](#Complexity) 
   - [Code](#Code)
+  - [References](#references)
 
 ## Explanation
 - Traverse from left to right and compare adjacent elements move the higher value element to the right.
@@ -56,20 +57,25 @@ Place the remaining two elements at their correct positions.
 ```Java
 
 public static void bubbleSort() {
-        int[] arr = {7, 8, 3, 1, 2};
+    int[] arr = {7, 8, 3, 1, 2};
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
+    for (int i = 0; i < arr.length - 1; i++) {
+        for (int j = 0; j < arr.length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
             }
         }
-
-        for (int i = 0; i < arr.length; i++)
-            System.out.print(arr[i] + " ");
     }
+    for (int i = 0; i < arr.length; i++)
+        System.out.print(arr[i] + " ");
+}
 
 ```
+
+## References
+* [BubbleSort Scaler](https://www.scaler.com/topics/data-structures/bubble-sort/)
+* [BubbleSort GeeksForGeeks](https://www.geeksforgeeks.org/bubble-sort/)
+* [BubbleSort Javapoint](https://www.javatpoint.com/bubble-sort)
+
