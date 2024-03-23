@@ -101,6 +101,9 @@ while (!s.isEmpty()) {
 ```
 
 
+## References
+[Stack Scaler](https://www.scaler.com/topics/data-structures/stack-in-data-structure/)
+
 
 
 
