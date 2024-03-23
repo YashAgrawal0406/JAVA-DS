@@ -3,7 +3,7 @@
   - [Code](#Code)
   - [Output](#Output)
 
-> This is a code for Stack data struture implementation using the inbuild stack collection framework provided by Java
+> This is a code for Stack data struture implementation using the inbuild `stack collection framework` provided by Java
 ## Code
 ```Java
 import java.util.Stack;
