@@ -5,6 +5,8 @@
     - [Complexity](#Complexity)
     - [Application](#Application)
   - [Code](#Code)
+    - [Stack](#Stack)
+    - [Main](#Main)   
   - [References](#references)
 
 
@@ -52,6 +54,8 @@ If we want to perform UNDO operation, and want to achieve 'ab' state, then we im
 > [!NOTE]
 > Use Arraylist for creation of stack in interview
 
+
+### Stack
 ```Java
 public static class Stack {
     static ArrayList<Integer> list = new ArrayList<>();
@@ -79,6 +83,20 @@ public static class Stack {
 
         return list.get(list.size() - 1);
     }
+}
+```
+
+### Main
+```Java
+Stack s = new Stack();
+s.push(1);
+s.push(2);
+s.push(3);
+s.push(4);
+
+while (!s.isEmpty()) {
+    System.out.println(s.peek());
+    s.pop();
 }
 ```
 
