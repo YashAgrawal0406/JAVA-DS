@@ -14,8 +14,6 @@
 
 > Stacks follow `LIFO`, which is `Last In, First Out` mechanism. Inserting an element is known as `push`, and deleting an element is known as `pop`
 
-
-  
 ### Operations
 - `isEmpty()`: Checks if the stack is empty.
 - `push(T data)`: Adds an element to the top of the stack.
@@ -48,3 +46,44 @@ If we want to perform UNDO operation, and want to achieve 'ab' state, then we im
     - Prefix to postfix
     - Postfix to infix
 - `Memory management:` The stack manages the memory. The memory is assigned in the contiguous memory blocks. The memory is known as stack memory as all the variables are assigned in a function call stack memory. The memory size assigned to the program is known to the compiler. When the function is created, all its variables are assigned in the stack memory. When the function completed its execution, all the variables assigned in the stack are released.
+
+
+## Code
+> [!NOTE]
+> Use Arraylist for creation of stack in interview
+
+```Java
+public static class Stack {
+    static ArrayList<Integer> list = new ArrayList<>();
+    
+    public static boolean isEmpty() {
+        return list.size() == 0;
+    }
+
+    public static void push(int data) {
+        list.add(data);
+    }
+
+    public static int pop() {
+        if (list.isEmpty())
+            return -1;
+        
+        int top = list.get(list.size() - 1);
+        list.remove(list.size() - 1);
+        return top;
+    }
+
+    public static int peek() {
+        if (list.isEmpty())
+            return -1;
+
+        return list.get(list.size() - 1);
+    }
+}
+```
+
+
+
+
+
+
