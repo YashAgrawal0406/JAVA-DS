@@ -82,6 +82,6 @@ public static void main(String[] args) {
 ```
 
 ## References
-- https://www.scaler.com/topics/data-structures/queue-in-data-structure/
-- https://www.scaler.com/topics/types-of-queue-in-data-structure/
+- [Queue Scaler](https://www.scaler.com/topics/data-structures/queue-in-data-structure/)
+- [Types of queue](https://www.scaler.com/topics/types-of-queue-in-data-structure/)
 
