@@ -2,6 +2,7 @@
 - [Problems](#Problems)
     - [Push at bottom](#PushAtBottom)
     - [Reverse](#Reverse)
+- [Links To Stack Problems](#Links-to-stack-problem)
 
 ## `PushAtBottom` 
 1. Push a new item at the bottom of the stack
@@ -83,4 +84,10 @@ public class Main {
     }
 }
 ```
+<br>
 
+
+
+
+## Links To Stack Problems
+> [Links To Stack Problems](https://medium.com/techie-delight/stack-data-structure-practice-problems-and-interview-questions-9f08a35a7f19)
