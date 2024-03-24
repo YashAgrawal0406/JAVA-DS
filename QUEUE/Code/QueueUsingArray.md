@@ -1,7 +1,7 @@
 # Topics
 - [Topics](#Topics)
   - [Code](#Code)
-    - [Queue Using Array](#Stack-Using-Array) 
+    - [Queue Using Array](#Queue-Using-Array) 
     - [Main](#Main) 
   - [Output](#Output)
 
