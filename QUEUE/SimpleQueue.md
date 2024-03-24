@@ -66,7 +66,7 @@ public static class Queue{
 }
 ```
 
-Main
+### Main
 ```Java
 public static void main(String[] args) {
     Queue q = new Queue();
