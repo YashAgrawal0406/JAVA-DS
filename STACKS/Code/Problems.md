@@ -12,8 +12,8 @@
             - [Prefix to Infix Conversion](#Prefix-to-Infix-Conversion)
             - [Prefix to Postfix Conversion](#Prefix-to-Postfix-Conversion) 
         - [Postfix to Infix and Prefix Conversion](#Postfix-to-Infix-and-Prefix-Conversion)
-            - [Prefix to Infix Conversion](#Prefix-to-Infix-Conversion)
-            - [Prefix to Postfix Conversion](#Prefix-to-Postfix-Conversion) 
+            - [Postfix to Infix Conversion](#Postfix-to-Infix-Conversion)
+            - [Postfix to Prefix Conversion](#Postfix-to-Prefix-Conversion) 
 - [Links To Stack Problems](#Links-to-stack-problems)
 
 ## `PushAtBottom` 
