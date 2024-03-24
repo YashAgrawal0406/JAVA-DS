@@ -4,6 +4,8 @@
     - [Reverse](#Reverse)
     - [Balanced Parathensis](#Balanced-Parathensis)
     - [Duplicate Parenthesis](#Duplicate-Parenthesis)
+    - [Infix Prefix Postfix](#Infix-prefix-postfix)
+        - [Infix to Prefix and Postfix Conversion](#Infix-to-Prefix-and-Postfix-Conversion) 
 - [Links To Stack Problems](#Links-to-stack-problems)
 
 ## `PushAtBottom` 
@@ -238,25 +240,61 @@ class Main
 <br>
 
 ## `Infix Prefix Postfix`
-Infix Expressions   :  A + B 
-> if an expression has multiple operators with the same precedence, the evaluation of those operators occurs from left to right.
+- Infix Expressions   :  A + B 
+    > if an expression has multiple operators with the same precedence, the evaluation of those operators occurs from left to right.
 
-<img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/e6999f2e-a391-4563-b743-9621e28d5502" width="150" height="100">
+    <img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/e6999f2e-a391-4563-b743-9621e28d5502" width="150" height="100">
 
-Prefix Expressions  :  + A B
-> We should consider that prefix expressions are evaluated from right to left. Thus, we apply each operator to its operands as it is encountered.
+- Prefix Expressions  :  + A B
+    > We should consider that prefix expressions are evaluated from right to left. Thus, we apply each operator to its operands as it is encountered.
 
-<img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/21688b77-d988-4ff7-8237-b338441afb27" width="150" height="100">
+    <img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/21688b77-d988-4ff7-8237-b338441afb27" width="150" height="100">
 
-Postfix Expressions :  A B +
-> we can evaluate postfix expressions from left to right, with each operator being applied to its operands as encountered.
+- Postfix Expressions :  A B +
+    > we can evaluate postfix expressions from left to right, with each operator being applied to its operands as encountered.
 
-<img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/2ae428e7-42ff-4ab0-b0c5-d6eaf60541fe" width="150" height="100">
+    <img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/2ae428e7-42ff-4ab0-b0c5-d6eaf60541fe" width="150" height="100">
+
+### Infix to Prefix and Postfix Conversion:
+#### Infix to Prefix Conversion 
+    - This function converts an infix expression to its equivalent prefix notation.
+    - It processes the expression in reverse order to handle parentheses effectively.
+    - Operands are appended directly to the result.
+    - Operators are pushed onto a stack, and when encountering lower-precedence operators, they're popped and appended to the result until the stack is empty or an operator with lower precedence is encountered.
+    - Finally, remaining operators on the stack are appended to the result.
+
+#### Infix to Postfix Conversion
+    - This function converts an infix expression to its equivalent postfix notation.
+    - It iterates through the infix expression from left to right.
+    - Operands are directly appended to the result.
+    - Operators are pushed onto a stack, and when encountering lower-precedence operators, they're popped and appended to the result until the stack is empty or an operator with lower precedence is encountered.
+    - Parentheses are handled similarly to infix to prefix conversion.
+    - Finally, remaining operators on the stack are appended to the result.
 
 
+### Prefix to Infix and Postfix Conversion:
+#### Prefix to Infix Conversion
+    - This function converts a prefix expression to its equivalent infix notation.
+    - It iterates through the prefix expression from right to left.
+    - Operands are pushed onto a stack.
+    - When encountering an operator, two operands are popped from the stack, combined with the operator inside parentheses, and pushed back onto the stack.
+    - The result is the infix expression.
 
+#### Prefix to Postfix Conversion
+    - This function converts a prefix expression to its equivalent postfix notation.
+    - It follows a similar approach to prefix to infix conversion but constructs the postfix expression instead.
 
+### Postfix to Infix and Prefix Conversion:
+#### Postfix to Infix Conversion
+    - This function converts a postfix expression to its equivalent infix notation.
+    - It iterates through the postfix expression from left to right.
+    - Operands are pushed onto a stack.
+    - When encountering an operator, two operands are popped from the stack, combined with the operator inside parentheses, and pushed back onto the stack.
+    - The result is the infix expression.
 
+#### Postfix to Prefix Conversion
+    - This function converts a postfix expression to its equivalent prefix notation.
+    - It follows a similar approach to postfix to infix conversion but constructs the prefix expression instead
 
 
 
