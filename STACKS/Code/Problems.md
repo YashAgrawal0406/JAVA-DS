@@ -263,7 +263,7 @@ class Main
 
     <img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/2ae428e7-42ff-4ab0-b0c5-d6eaf60541fe" width="150" height="100">
 
-### Infix to Prefix and Postfix Conversion:
+### `Infix to Prefix and Postfix Conversion:`
 #### Infix to Prefix Conversion 
     - This function converts an infix expression to its equivalent prefix notation.
     - It processes the expression in reverse order to handle parentheses effectively.
@@ -279,8 +279,95 @@ class Main
     - Parentheses are handled similarly to infix to prefix conversion.
     - Finally, remaining operators on the stack are appended to the result.
 
+```Java
+import java.util.Stack;
 
-### Prefix to Infix and Postfix Conversion:
+public class InfixToPrefixPostfix {
+    // Function to determine operator precedence
+    private static int precedence(char operator) {
+        switch (operator) {
+            case '+':
+            case '-':
+                return 1;
+            case '*':
+            case '/':
+                return 2;
+            case '^':
+                return 3;
+            default:
+                return -1;
+        }
+    }
+
+    // Function to convert infix expression to prefix expression
+    public static String infixToPrefix(String infix) {
+        StringBuilder prefix = new StringBuilder();
+        Stack<Character> stack = new Stack<>();
+
+        // Reverse the infix expression for easier processing
+        for (char c : new StringBuilder(infix).reverse().toString().toCharArray()) {
+            if (Character.isLetterOrDigit(c))
+                prefix.append(c);
+            else if (c == ')')
+                stack.push(c);
+            else if (c == '(') {
+                while (!stack.isEmpty() && stack.peek() != ')')
+                    prefix.append(stack.pop());
+                stack.pop(); // Discard ')'
+            } else {
+                while (!stack.isEmpty() && precedence(c) < precedence(stack.peek()))
+                    prefix.append(stack.pop());
+                stack.push(c);
+            }
+        }
+
+        // Pop remaining operators and append to prefix
+        while (!stack.isEmpty())
+            prefix.append(stack.pop());
+
+        // Reverse the prefix expression to get the final result
+        return prefix.reverse().toString();
+    }
+
+    // Function to convert infix expression to postfix expression
+    public static String infixToPostfix(String infix) {
+        StringBuilder postfix = new StringBuilder();
+        Stack<Character> stack = new Stack<>();
+
+        // Process each character in the infix expression
+        for (char c : infix.toCharArray()) {
+            if (Character.isLetterOrDigit(c))
+                postfix.append(c);
+            else if (c == '(')
+                stack.push(c);
+            else if (c == ')') {
+                while (!stack.isEmpty() && stack.peek() != '(')
+                    postfix.append(stack.pop());
+                stack.pop(); // Discard '('
+            } else {
+                while (!stack.isEmpty() && precedence(c) <= precedence(stack.peek()))
+                    postfix.append(stack.pop());
+                stack.push(c);
+            }
+        }
+
+        // Pop remaining operators and append to postfix
+        while (!stack.isEmpty())
+            postfix.append(stack.pop());
+
+        return postfix.toString();
+    }
+
+    public static void main(String[] args) {
+        String infix = "a+b*(c^d-e)^(f+g*h)-i";
+        System.out.println("Infix: " + infix);
+        System.out.println("Prefix: " + infixToPrefix(infix));
+        System.out.println("Postfix: " + infixToPostfix(infix));
+    }
+}
+```
+
+### `Prefix to Infix and Postfix Conversion:`
 #### Prefix to Infix Conversion
     - This function converts a prefix expression to its equivalent infix notation.
     - It iterates through the prefix expression from right to left.
@@ -292,7 +379,63 @@ class Main
     - This function converts a prefix expression to its equivalent postfix notation.
     - It follows a similar approach to prefix to infix conversion but constructs the postfix expression instead.
 
-### Postfix to Infix and Prefix Conversion:
+```Java
+import java.util.Stack;
+
+public class PrefixToInfixPostfix {
+    // Function to convert prefix expression to infix expression
+    public static String prefixToInfix(String prefix) {
+        Stack<String> stack = new Stack<>();
+        StringBuilder infix = new StringBuilder(prefix).reverse();
+
+        // Process each character in the reversed prefix expression
+        for (char c : infix.toString().toCharArray()) {
+            if (Character.isLetterOrDigit(c))
+                stack.push(Character.toString(c)); // Operand: push onto stack
+            else {
+                String operand1 = stack.pop(); // Pop operands
+                String operand2 = stack.pop();
+                String expression = "(" + operand1 + c + operand2 + ")"; // Create infix expression
+                stack.push(expression); // Push infix expression onto stack
+            }
+        }
+
+        return stack.pop(); // Infix expression is at the top of stack
+    }
+
+    // Function to convert prefix expression to postfix expression
+    public static String prefixToPostfix(String prefix) {
+        Stack<String> stack = new Stack<>();
+        StringBuilder postfix = new StringBuilder();
+
+        // Process each character in the reversed prefix expression
+        for (char c : new StringBuilder(prefix).reverse().toString().toCharArray()) {
+            if (Character.isLetterOrDigit(c))
+                stack.push(Character.toString(c)); // Operand: push onto stack
+            else {
+                String operand1 = stack.pop(); // Pop operands
+                String operand2 = stack.pop();
+                stack.push(operand1 + operand2 + c); // Concatenate operands with operator and push onto stack
+            }
+        }
+
+        // Pop remaining operands and append to postfix
+        while (!stack.isEmpty())
+            postfix.append(stack.pop());
+
+        return postfix.toString(); // Reverse the postfix expression to get the final result
+    }
+
+    public static void main(String[] args) {
+        String prefix = "-+a*b-cd";
+        System.out.println("Prefix: " + prefix);
+        System.out.println("Infix: " + prefixToInfix(prefix));
+        System.out.println("Postfix: " + prefixToPostfix(prefix));
+    }
+}
+```
+
+### `Postfix to Infix and Prefix Conversion:`
 #### Postfix to Infix Conversion
     - This function converts a postfix expression to its equivalent infix notation.
     - It iterates through the postfix expression from left to right.
@@ -304,7 +447,54 @@ class Main
     - This function converts a postfix expression to its equivalent prefix notation.
     - It follows a similar approach to postfix to infix conversion but constructs the prefix expression instead
 
+```Java
+import java.util.Stack;
 
+public class PostfixToInfixPrefix {
+    // Function to convert postfix expression to infix expression
+    public static String postfixToInfix(String postfix) {
+        Stack<String> stack = new Stack<>();
+
+        // Process each character in the postfix expression
+        for (char c : postfix.toCharArray()) {
+            if (Character.isLetterOrDigit(c))
+                stack.push(Character.toString(c)); // Operand: push onto stack
+            else {
+                String operand2 = stack.pop(); // Pop operands
+                String operand1 = stack.pop();
+                stack.push("(" + operand1 + c + operand2 + ")"); // Create infix expression and push onto stack
+            }
+        }
+
+        return stack.pop(); // Infix expression is at the top of stack
+    }
+
+    // Function to convert postfix expression to prefix expression
+    public static String postfixToPrefix(String postfix) {
+        Stack<String> stack = new Stack<>();
+
+        // Process each character in the postfix expression
+        for (char c : postfix.toCharArray()) {
+            if (Character.isLetterOrDigit(c))
+                stack.push(Character.toString(c)); // Operand: push onto stack
+            else {
+                String operand2 = stack.pop(); // Pop operands
+                String operand1 = stack.pop();
+                stack.push(c + operand1 + operand2); // Concatenate operands with operator and push onto stack
+            }
+        }
+
+        return stack.pop(); // Prefix expression is at the top of stack
+    }
+
+    public static void main(String[] args) {
+        String postfix = "ab*cd-+";
+        System.out.println("Postfix: " + postfix);
+        System.out.println("Infix: " + postfixToInfix(postfix));
+        System.out.println("Prefix: " + postfixToPrefix(postfix));
+    }
+}
+```
 
 
 
