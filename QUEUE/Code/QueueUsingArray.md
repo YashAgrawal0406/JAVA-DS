@@ -80,3 +80,13 @@ while(!q.isEmpty())
     q.remove();
 }
 ```
+
+## Output
+```
+1
+2
+3
+4
+5
+Queue is empty
+```
