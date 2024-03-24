@@ -3,7 +3,7 @@
     - [Push at bottom](#PushAtBottom)
     - [Reverse](#Reverse)
 
-## PushAtBottom 
+## `PushAtBottom` 
 1. Push a new item at the bottom of the stack
 
 ```Java
@@ -36,9 +36,9 @@ public class Main {
     }
 }
 ```
+<br>
 
-
-## Reverse
+## `Reverse`
 2. Reverse a given stack
 > we will use push at bottom code and enhance it to reverse the stack
 
