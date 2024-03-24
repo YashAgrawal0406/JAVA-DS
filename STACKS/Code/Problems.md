@@ -237,4 +237,4 @@ class Main
 ```
 ## Links To Stack Problems
 > [Medium](https://medium.com/techie-delight/stack-data-structure-practice-problems-and-interview-questions-9f08a35a7f19)
-> [GeeksforGeeks](#https://www.geeksforgeeks.org/top-50-problems-on-stack-data-structure-asked-in-interviews/)
+> [GeeksforGeeks](https://www.geeksforgeeks.org/top-50-problems-on-stack-data-structure-asked-in-interviews/)
