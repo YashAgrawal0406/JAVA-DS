@@ -5,7 +5,7 @@
     - [Complexity](#Complexity)
     - [Application](#Application)
   - [Code](#Code)
-    - [Stack](#Stack)
+    - [SimpleQueue](#SimpleQueue)
     - [Main](#Main)   
   - [References](#references)
 
@@ -28,3 +28,60 @@
 - `Peek` : O(1)
 - `isFull` : O(1)
 - `isEmpty` : O(1)
+
+### Application
+- Job Scheduling
+- Multiprogramming
+- Operation on data structures
+- Buffer Space
+
+## Code
+> [!NOTE]
+> Use Arraylist for creation of Queue in interview
+
+### SimpleQueue
+```Java
+public static class Queue{
+    static ArrayList<Integer> queue = new ArrayList<>();
+
+    public static boolean isEmpty()
+    {
+        return (queue.size() == 0);
+    }
+
+    public static void add(int data)
+    {
+        queue.add(data);
+    }
+
+    public static int remove()
+    {
+        if(queue.isEmpty())
+            return -1;
+
+        int front = queue.get(0);
+        queue.remove(0);
+        return front;
+    }
+}
+```
+
+Main
+```Java
+public static void main(String[] args) {
+    Queue q = new Queue();
+    q.add(10);
+    q.add(20);
+    q.add(30);
+    q.add(40);
+
+    while(!q.isEmpty()) {
+        System.out.println(q.remove());
+    }
+}
+```
+
+## References
+- https://www.scaler.com/topics/data-structures/queue-in-data-structure/
+- https://www.scaler.com/topics/types-of-queue-in-data-structure/
+
