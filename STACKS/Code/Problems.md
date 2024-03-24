@@ -5,7 +5,12 @@
     - [Balanced Parathensis](#Balanced-Parathensis)
     - [Duplicate Parenthesis](#Duplicate-Parenthesis)
     - [Infix Prefix Postfix](#Infix-prefix-postfix)
-        - [Infix to Prefix and Postfix Conversion](#Infix-to-Prefix-and-Postfix-Conversion) 
+        - [Infix to Prefix and Postfix Conversion](#Infix-to-Prefix-and-Postfix-Conversion)
+            - [Infix to Prefix Conversion](#Infix-to-Prefix-Conversion)
+            - [Infix to Postfix Conversion](#Infix-to-Postfix-Conversion)
+        - [Prefix to Infix and Postfix Conversion](#Prefix-to-Infix-and-Postfix-Conversion) 
+        - [Postfix to Infix and Prefix Conversion](#Postfix-to-Infix-and-Prefix-Conversion) 
+            - 
 - [Links To Stack Problems](#Links-to-stack-problems)
 
 ## `PushAtBottom` 
