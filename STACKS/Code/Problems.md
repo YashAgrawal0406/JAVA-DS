@@ -1,7 +1,8 @@
-- [Push at bottom](#PushAtBottom)
-- [Reverse](#Reverse)
 
-### 1. Push a new item at the bottom of the stack
+    - [Push at bottom](#PushAtBottom)
+    - [Reverse](#Reverse)
+
+## 1. Push a new item at the bottom of the stack
 
 ```Java
 //Push to the bottom of the stack
@@ -35,7 +36,7 @@ public class Main {
 ```
 
 
-### 2. Reverse a given stack
+## 2. Reverse a given stack
 > we will use push at bottom code and enhance it to reverse the stack
 
 ```Java
