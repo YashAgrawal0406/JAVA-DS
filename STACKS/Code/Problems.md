@@ -2,7 +2,7 @@
 - [Problems](#Problems)
     - [Push at bottom](#PushAtBottom)
     - [Reverse](#Reverse)
-- [Links To Stack Problems](#Links-to-stack-problem)
+- [Links To Stack Problems](#Links-to-stack-problems)
 
 ## `PushAtBottom` 
 1. Push a new item at the bottom of the stack
