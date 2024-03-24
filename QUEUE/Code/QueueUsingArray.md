@@ -68,11 +68,18 @@ public static class Queue{
 ### Main
 ```Java
 Queue q = new Queue(10);
+
 q.add(1);
 q.add(2);
 q.add(3);
 q.add(4);
 q.add(5);
+q.add(6);
+q.add(7);
+q.add(8);
+q.add(9);
+q.add(10);
+q.add(11);
 
 while(!q.isEmpty())
 {
@@ -84,10 +91,16 @@ Queue.remove();
 
 ## Output
 ```
+Queue is full
 1
 2
 3
 4
 5
+6
+7
+8
+9
+10
 Queue is empty
 ```
