@@ -235,6 +235,44 @@ class Main
     }
 }
 ```
+<br>
+
+## `Infix Prefix Postfix`
+Infix Expressions   :  A + B 
+> if an expression has multiple operators with the same precedence, the evaluation of those operators occurs from left to right.
+
+<img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/e6999f2e-a391-4563-b743-9621e28d5502" width="150" height="100">
+
+Prefix Expressions  :  + A B
+> We should consider that prefix expressions are evaluated from right to left. Thus, we apply each operator to its operands as it is encountered.
+
+<img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/21688b77-d988-4ff7-8237-b338441afb27" width="150" height="100">
+
+Postfix Expressions :  A B +
+> we can evaluate postfix expressions from left to right, with each operator being applied to its operands as encountered.
+
+<img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/2ae428e7-42ff-4ab0-b0c5-d6eaf60541fe" width="150" height="100">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Links To Stack Problems
 - [Medium](https://medium.com/techie-delight/stack-data-structure-practice-problems-and-interview-questions-9f08a35a7f19)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/top-50-problems-on-stack-data-structure-asked-in-interviews/)
