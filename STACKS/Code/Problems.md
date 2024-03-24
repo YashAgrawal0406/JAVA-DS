@@ -8,9 +8,12 @@
         - [Infix to Prefix and Postfix Conversion](#Infix-to-Prefix-and-Postfix-Conversion)
             - [Infix to Prefix Conversion](#Infix-to-Prefix-Conversion)
             - [Infix to Postfix Conversion](#Infix-to-Postfix-Conversion)
-        - [Prefix to Infix and Postfix Conversion](#Prefix-to-Infix-and-Postfix-Conversion) 
-        - [Postfix to Infix and Prefix Conversion](#Postfix-to-Infix-and-Prefix-Conversion) 
-            - 
+        - [Prefix to Infix and Postfix Conversion](#Prefix-to-Infix-and-Postfix-Conversion)
+            - [Prefix to Infix Conversion](#Prefix-to-Infix-Conversion)
+            - [Prefix to Postfix Conversion](#Prefix-to-Postfix-Conversion) 
+        - [Postfix to Infix and Prefix Conversion](#Postfix-to-Infix-and-Prefix-Conversion)
+            - [Prefix to Infix Conversion](#Prefix-to-Infix-Conversion)
+            - [Prefix to Postfix Conversion](#Prefix-to-Postfix-Conversion) 
 - [Links To Stack Problems](#Links-to-stack-problems)
 
 ## `PushAtBottom` 
