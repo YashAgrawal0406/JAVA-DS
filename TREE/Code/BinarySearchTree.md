@@ -262,6 +262,6 @@ Print all paths from Root to leaf
 ```
 
 
-## Refernces
+## References
 - [Binary Search tree scaler](https://www.scaler.com/topics/data-structures/binary-search-tree/)
 
