@@ -284,4 +284,5 @@ Remove from index 2
 ```
 
 ## References
-- https://www.scaler.com/topics/linked-list/
+- [LinkedList Scaler](https://www.scaler.com/topics/linked-list/)
+- [LinkedList Scaler Java](https://www.scaler.com/topics/linked-list-in-java/)
