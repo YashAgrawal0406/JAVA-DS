@@ -5,6 +5,7 @@
   - [Tree Data Structure Terminologies](#Tree-Data-Structure-Terminologies)
   - [Properties of Trees in Data Structure](#Properties-of-Trees-in-Data-Structure)
   - [Implementation of Tree in Data Structure](#Implementation-of-Tree-in-Data-Structure)
+  - [Types of Trees](#Types-of-Trees)
   - [References](#references)
  
 ## Summary
@@ -160,6 +161,27 @@ Class Node {
 Here `left` will contain the reference to the Node that has value which is just smaller to the value in the current Node. Similarly `right` will contain reference to the Node that has value greater than the current Node.
 
 What we’re discussing here is in reference to a binary tree as a binary tree has two children (utmost). That means, either a node has `0, 1 or max 2` children. A generic tree can have more than 2 children as well.
+
+## Types of Trees
+`General tree:` 
+- In the general tree, each node has either 0 or n number of nodes. In this tree, there is no limitation to the number of nodes. It starts with a root node and the children of the parent node make another general sub tree. Hence eachnode is a root of another sub-tree i.e. there can be `n number of subtrees in a general tree. All the subtrees are unordered in a general tree.
+
+`Binary Tree:` 
+- In a binary tree, each node can have at most 2 children (i.e. either 0, 1, 2). There is no restriction as to what data will be in the left child or right child.
+
+`Binary Search Tree:` 
+- A binary search tree just like a binary tree can have at most 2 children. It can have n nodes and also each node can be defined as a data part that holds the data, left child and the right node.
+Left child holds reference to the node that contains data which is immediately lesser than the data in the current node and similarly the right child contains the reference to the node that contains data which is just greater than the data in the current node.
+- Every node in the left subtree must contain a value less than the value of the root node, and the value of each node in the right subtree must be bigger than the value of the root node. 
+
+`AVL Tree:`
+- It can be considered as a binary tree and also a type of binary search tree. It satisfies features of both binary tree and binary search tree.
+- It's a self balancing tree i.e. balancing heights of left subtree and right subtree. This balancing is measured by something called balancing factor.
+- A tree is considered as an AVL tree if it satisfies properties of both a binary search tree and the balancing factor. Difference between the height of the left subtree and the right subtree is considered as the height of the AVL tree.The value of the balancing factor must be 0, 1 or -1 for each node in an AVL tree.
+
+`Red Black Tree:`
+- It is also a variant of a binary search tree. It's also a self balancing tree just like an AVL tree, the only difference is in an AVL tree, we do not have an idea as to how much rotations would be required to balance the tree but in a red black tree a maximum of two rotations are required to balance the tree. It contains a bit that represents the red or black color of the node to ensure the balancing of the tree.
+And there are and can be more types of tree data structure, but these are the common tree data structures that one must know about.
 
 
 ## References
