@@ -3,8 +3,7 @@
   - [Explanation](#Explanation) 
   - [Code](#Code)
     - [Node Structure](#Node-Structure)
-    - [Linked List](#Linked-List)
-    - [Main](#Main)
+    - [Doubly Linked List](#Doubly-Linked-List)
   - [Output](#Output)
  
 ## Explanation 
