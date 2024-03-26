@@ -40,6 +40,134 @@ Here's a brief explanation of doubly linked lists:
   - Increased memory overhead: Each node in a doubly linked list requires additional memory to store both next and previous pointers, which increases memory overhead compared to singly linked lists.
   - More complex implementation: Maintaining bidirectional linkage adds complexity to the implementation and requires careful handling of edge cases.
 
-
 ![image](https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/46a06a28-c6ef-4da1-a78f-6c98fdcbaba0)
 
+## Code
+### Node Structure
+```Java
+class Node {
+    int data;
+    Node prev;
+    Node next;
+
+    public Node(int data) {
+        this.data = data;
+        this.prev = null;
+        this.next = null;
+    }
+}
+```
+
+### Doubly Linked List
+```Java
+class Node {
+    int data;
+    Node prev;
+    Node next;
+
+    public Node(int data) {
+        this.data = data;
+        this.prev = null;
+        this.next = null;
+    }
+}
+
+public class DoublyLinkedList {
+    private Node head;
+    private Node tail;
+
+    public DoublyLinkedList() {
+        this.head = null;
+        this.tail = null;
+    }
+
+    // Insert a new node at the beginning of the doubly linked list
+    public void insertAtBeginning(int data) {
+        Node newNode = new Node(data);
+        if (isEmpty()) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }
+    }
+
+    // Insert a new node at the end of the doubly linked list
+    public void insertAtEnd(int data) {
+        Node newNode = new Node(data);
+        if (isEmpty()) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+        }
+    }
+
+    // Delete the first occurrence of a node with the given data from the doubly linked list
+    public void delete(int data) {
+        if (isEmpty()) {
+            System.out.println("Doubly linked list is empty. Cannot delete.");
+            return;
+        }
+        Node current = head;
+        while (current != null) {
+            if (current.data == data) {
+                if (current == head) {
+                    head = current.next;
+                    if (head != null) {
+                        head.prev = null;
+                    } else {
+                        tail = null;
+                    }
+                } else if (current == tail) {
+                    tail = current.prev;
+                    tail.next = null;
+                } else {
+                    current.prev.next = current.next;
+                    current.next.prev = current.prev;
+                }
+                return;
+            }
+            current = current.next;
+        }
+        System.out.println("Node with data " + data + " not found in the doubly linked list. Cannot delete.");
+    }
+
+    // Print the elements of the doubly linked list
+    public void display() {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    // Check if the doubly linked list is empty
+    public boolean isEmpty() {
+        return head == null;
+    }
+
+    public static void main(String[] args) {
+        DoublyLinkedList dll = new DoublyLinkedList();
+        dll.insertAtEnd(1);
+        dll.insertAtEnd(2);
+        dll.insertAtEnd(3);
+        dll.insertAtBeginning(0);
+        dll.display(); // Output: 0 1 2 3
+        dll.delete(1);
+        dll.display(); // Output: 0 2 3
+    }
+}
+```
+
+
+## Output
+```
+0 1 2 3 
+0 2 3 
+```
