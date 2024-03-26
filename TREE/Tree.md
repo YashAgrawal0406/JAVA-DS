@@ -1,8 +1,10 @@
 # Topics
 - [Topics](#Topics)
   - [Explanation](#Explanation)
-  - What is Tree Data Structure?
-  - Tree Data Structure Terminologies
+  - [What is Tree Data Structure?](#What-is-Tree-Data-Structure)
+  - [Tree Data Structure Terminologies](#Tree-Data-Structure-Terminologies)
+  - [Properties of Trees in Data Structure](#Properties-of-Trees-in-Data-Structure)
+  - [Implementation of Tree in Data Structure](#Implementation-of-Tree-in-Data-Structure)
   - [References](#references)
  
 ## Summary
@@ -113,3 +115,53 @@
     <td>Nodes B, E, F represent one subtree</td>
   </tr> 
 </table>
+
+
+## Properties of Trees in Data Structure
+<p align="center">
+<img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/73fd7d9f-b917-412c-91c1-3e470602b78f" width="800" height="500">
+</p>
+
+- `Recursive Data Structure:`
+  - a recursive method is the one that calls itself. Similarly a recursive data structure is the one that contains itself. A tree can be viewed as a recursive data structure, as even though a tree has only one root node, each node acts as a root node to another sub-tree. For example:
+  - Following is a tree that has ‘A’ as the root node. Similarly if we look at ‘C’ node, that is another tree in itself. And the tree no 3 i.e. that starts with ‘D’ node is also a tree in itself. 
+  - And that is how a tree contains multiple trees in itself, and this proves that it's a recursive data structure as a recursive data structure contains itself.
+
+> [!NOTE]
+> Even the leaf nodes are a tree in itself i.e. they can be seen from a perspective as trees without any child nodes.
+
+- `Number of edges:`
+  - If there are ‘n’ nodes in a tree then there would be n−1 edges. Each edge is the line-arrow connecting two nodes.
+
+- `Depth of node x:`
+  - Depth of a specific node x is defined as the length from root till this x node. One edge contributes to one unit in the length. Hence depth of a node x can also be considered as the number of nodes from root node till this x node.
+  - Or depth of a node x can also be considered as the level L at which this node is, and adding 1 to it i.e. depth=L+1. It is because the first level starts with 0.
+
+- `Height of node x:`
+  - Height of a node represents the number of edges on the longest path between that node and a leaf.
+
+## Implementation of Tree in Data Structure
+
+<p align="center">
+<img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/f1feb278-9115-4d06-8f95-7dec50d1cb9f" width="800" height="500">
+</p>
+
+The above representation depicts what a tree looks like on a memory. According to it, each node consists of three fields.
+Left part of the node consists of the memory address of the left child, the right part of the node consists of the memory address of the right child and the center part holds the data for this node.
+
+Relating to the above representation, each node can be programmatically defined as a class as follows:
+```Java
+Class Node {
+  public int value;
+  public Node left;
+  public Node right; 
+}
+```
+Here `left` will contain the reference to the Node that has value which is just smaller to the value in the current Node. Similarly `right` will contain reference to the Node that has value greater than the current Node.
+
+What we’re discussing here is in reference to a binary tree as a binary tree has two children (utmost). That means, either a node has `0, 1 or max 2` children. A generic tree can have more than 2 children as well.
+
+
+
+
+
