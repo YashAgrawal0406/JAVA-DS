@@ -7,6 +7,33 @@
     - [Main](#Main)
   - [Output](#Output)
  
+## Explanation 
+> A singly linked list is a fundamental data structure that consists of a sequence of nodes, where each node stores a value and a reference (or pointer) to the next node in the sequence. Unlike arrays, linked lists do not have a fixed size, and their elements are not stored in contiguous memory locations. Instead, each node in a linked list can be allocated dynamically from the memory heap.
+
+Here's a brief explanation of singly linked lists:
+
+- `Node:`
+  - Each node in a singly linked list contains two fields:
+  - Value/Data: Holds the data or value associated with the node.
+  - Next pointer: Points to the next node in the sequence.
+  - The last node in the list typically has a null reference as its next pointer, indicating the end of the list.
+
+- `Head Pointer:`
+  - The head pointer points to the first node in the linked list.
+  - It serves as the entry point or starting point for accessing the elements of the list.
+
+- Basic Operations:
+  - `Insertion:`
+    - Elements can be inserted at the beginning, middle, or end of the list.
+    - To insert a new node, the next pointer of the preceding node is updated to point to the new node, and the next pointer of the new node is set to point to the following node.
+  - `Deletion:`
+    - Elements can be deleted from the list by updating the next pointer of the preceding node to skip the node to be deleted.
+  - `Traversal:`
+    - To traverse a singly linked list, you start from the head pointer and follow the next pointers until you reach the end of the list (i.e., a null reference).
+  - `Search:`
+    - Searching for a specific value involves traversing the list and comparing each node's value until the target value is found or the end of the list is reached.
+
+![image](https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/7e93f52c-2046-42d6-8e81-90d7f418f62c)
 
 
 
