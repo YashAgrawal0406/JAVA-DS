@@ -162,6 +162,12 @@ Here `left` will contain the reference to the Node that has value which is just 
 What we’re discussing here is in reference to a binary tree as a binary tree has two children (utmost). That means, either a node has `0, 1 or max 2` children. A generic tree can have more than 2 children as well.
 
 
+## References
+- [Scaler DS](https://www.scaler.com/topics/data-structures/tree-data-structure/)
+- [Scaler Binary Tree](https://www.scaler.com/topics/data-structures/binary-tree-in-data-structure/)
+- [Scaler Types of Trees in Data Structures](https://www.scaler.com/topics/types-of-trees-in-data-structure/)
+
+
 
 
 
