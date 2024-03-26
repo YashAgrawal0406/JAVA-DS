@@ -6,6 +6,7 @@
     - [Linked List](#Linked-List)
     - [Main](#Main)
   - [Output](#Output)
+  - [References](#References)
  
 ## Explanation 
 > A singly linked list is a fundamental data structure that consists of a sequence of nodes, where each node stores a value and a reference (or pointer) to the next node in the sequence. Unlike arrays, linked lists do not have a fixed size, and their elements are not stored in contiguous memory locations. Instead, each node in a linked list can be allocated dynamically from the memory heap.
@@ -281,3 +282,6 @@ Remove from the start
 Remove from index 2
 3 -> 10 -> 1 -> null
 ```
+
+## References
+- https://www.scaler.com/topics/linked-list/
