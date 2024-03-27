@@ -3,7 +3,7 @@
 - [Topics](#Topics)
   - [Summary](#Summary)
   - [Complexity](#complexity)
-  - [What is a Trie Data Structure?](#What-is-a-Trie-Data-Structure?)
+  - [What is a Trie Data Structure?](#What-is-a-Trie-Data-Structure)
   - [Why Use a Trie Data Structure?](#Why-Use-a-Trie-Data-Structure)
   - [Properties of a Trie Data Structure](#Properties-of-a-Trie-Data-Structure)
   - [Basic Operations in a Trie Data Structure](#Basic-Operations-in-a-Trie-Data-Structure)
