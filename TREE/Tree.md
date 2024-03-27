@@ -1,6 +1,6 @@
 # Topics
 - [Topics](#Topics)
-  - [Explanation](#Explanation)
+  - [Summary](#Summary)
   - [What is Tree Data Structure?](#What-is-Tree-Data-Structure)
   - [Tree Data Structure Terminologies](#Tree-Data-Structure-Terminologies)
   - [Properties of Trees in Data Structure](#Properties-of-Trees-in-Data-Structure)
