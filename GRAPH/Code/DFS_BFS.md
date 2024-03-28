@@ -6,8 +6,28 @@
 
 
 ## Code
+Graph
+```Java
+  ArrayList<Edge> graph[] = new ArrayList[V];
+        /*
+
+                1----3
+               /     | \
+              0      |  5----6
+               \     | /
+                2----4
+         */
+```
 ### BFS
 ```Java
+//Main Method
+//Connected Graph BFS
+System.out.println("\nBFS : ");
+BFS(graph, V);
+System.out.println();
+
+
+
 public static void BFS(ArrayList<Edge> graph[], int V) {
     //The graph is connected graph
     Queue<Integer> q = new LinkedList<>();
@@ -29,11 +49,29 @@ public static void BFS(ArrayList<Edge> graph[], int V) {
         }
     }
 }
+
 ```
 
 
 ### Disconnected BFS
 ```Java
+//Main Method
+//Disconnected Graph BFS
+/*
+    0 --- 1 ----2
+    3 ---- 4
+*/
+System.out.println("\nDisconnected BFS : ");
+boolean vis[] = new boolean[V];
+for (int i = 0; i < V; i++) {
+    if(vis[i] == false)
+    {
+        BFSDisConnectedGraph(graph,V,vis,i);
+    }
+}
+
+
+
 public static void BFSDisConnectedGraph(ArrayList<Edge> graph[], int V, boolean vis[], int start) {
     //The graph is disconnected graph
     //This code is same as normal BFS but while calling this we make sure to call each node and if its not visited
@@ -62,6 +100,14 @@ public static void BFSDisConnectedGraph(ArrayList<Edge> graph[], int V, boolean 
 
 ### DFS
 ```Java
+//Main Method
+//connected graph DFS
+System.out.println("\nDFS : ");
+boolean vis1[] = new boolean[V];
+DFS(graph,0,vis1);
+
+
+
 public static void DFS(ArrayList<Edge> graph[], int curr, boolean vis[]) {
     System.out.print(curr + " ");
     vis[curr] = true;
@@ -77,6 +123,22 @@ public static void DFS(ArrayList<Edge> graph[], int curr, boolean vis[]) {
 
 ### Disconnected DFS
 ```Java
+//Main Method
+//Disconnected Graph DFS
+/*
+    0 --- 1 ----2
+    3 ---- 4
+*/
+System.out.println("\nDisconnected DFS");
+boolean vis2[] = new boolean[V];
+for (int i = 0; i < V; i++) {
+    if (vis2[i] == false) {
+        DFSDisConnectedGraph(graph, i, vis2);
+    }
+}
+
+
+
 public static void DFSDisConnectedGraph(ArrayList<Edge> graph[], int curr, boolean vis[]) {
     System.out.print(curr + " ");
     vis[curr] = true;
@@ -94,6 +156,14 @@ public static void DFSDisConnectedGraph(ArrayList<Edge> graph[], int curr, boole
 ### Print all the patch
 > print all the paths in graph from src to target
 ```Java
+//Main Method
+//Find all the paths from src to target
+int src = 0, tar = 5;
+System.out.println("\nAll the patch from SRC to DES : ");
+printAllPath(graph,new boolean[V],src,"0",tar);
+
+
+
 public static void printAllPath(ArrayList<Edge> graph[], boolean vis[], int curr, String path, int tar) {
     if (curr == tar) {
         System.out.println(path);
