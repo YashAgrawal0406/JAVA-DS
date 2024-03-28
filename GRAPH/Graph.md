@@ -8,6 +8,66 @@
     - [Path](#Path)
     - [Closed Path](#Closed-Path)
     - [Degree of a Node](#Degree-of-a-Node)
+   
+- [Syllabus](#Syllabus)
+  
+# Syllabus
+  - Introduction to Graphs:
+    - Definition of a graph.
+    - Basic terminology:
+      - Vertices (nodes) and edges.
+      - Directed and undirected graphs.
+      - Weighted and unweighted graphs.
+      - Simple and non-simple graphs.
+    - Types of graphs:
+      - Complete graph, cycle, path, tree, bipartite graph, etc.
+    - Applications of graphs in real-world scenarios.
+   
+  - Graph Representations:  
+    - Adjacency matrix representation.
+    - Adjacency list representation.
+    - Edge list representation.
+    - Comparison of different representations in terms of space and time complexity.
+
+  - Graph Traversals:
+    - Depth-first search (DFS):
+      - Recursive implementation.
+      - Iterative implementation using a stack.
+    - Breadth-first search (BFS):
+      - Iterative implementation using a queue.
+    - Comparison of DFS and BFS.
+    - Applications of graph traversal algorithms.
+  
+  - Graph Algorithms:
+    - Shortest path algorithms:
+      - Dijkstra's algorithm.
+      - Bellman-Ford algorithm.
+      - Floyd-Warshall algorithm.
+    - Minimum spanning tree (MST):
+      - Prim's algorithm.
+      - Kruskal's algorithm.
+    - Topological sorting.
+    - Strongly connected components (SCC):
+      - Kosaraju's algorithm.
+      - Tarjan's algorithm.
+
+  - Advanced Graph Algorithms:
+    - Graph coloring:
+      - Greedy coloring algorithm.
+    - Maximum flow and minimum cut:
+      - Ford-Fulkerson algorithm.
+      - Edmonds-Karp algorithm.
+    - Travelling Salesman Problem (TSP):
+      - Brute-force approach.
+      - Dynamic programming approach.
+      - Approximation algorithms.
+   
+  - Graph Theory Concepts:
+    - Eulerian and Hamiltonian graphs.
+    - Planar graphs and graph coloring theorems.
+    - Graph isomorphism.
+    - Connectivity and cut vertices/edges.
+    - Graph diameter and radius.
 
 
 ## What is Graph in Data Structure?
