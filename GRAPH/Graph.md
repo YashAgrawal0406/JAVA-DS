@@ -1,6 +1,6 @@
 # Topics
 - [Topics](#Topics)
-  - [What is Graph in Data Structure?](What-is-Graph-in-Data-Structure?)
+  - [What is Graph in Data Structure?](What-is-Graph-in-Data-Structure)
     - [Non-linear Data Structure](#Non-linear-Data-Structure)
   - [Graph Terminology](#Graph-Terminology)
     - [Nodes](#Nodes)
