@@ -1,15 +1,13 @@
 # Topics
 - [Topics](#Topics)
-  - [What is Graph in Data Structure?](What is Graph in Data Structure?)
-    - [Non-linear Data Structure](#Non-linear Data Structure)
-  - [Graph Terminology](#Graph Terminology)
+  - [What is Graph in Data Structure?](What-is-Graph-in-Data-Structure?)
+    - [Non-linear Data Structure](#Non-linear-Data-Structure)
+  - [Graph Terminology](#Graph-Terminology)
     - [Nodes](#Nodes)
     - [Edges](#Edges)
     - [Path](#Path)
-    - [Closed Path](#Closed Path)
-    - [Degree of a Node](#Degree of a Node)
-    - [Path](#Path)
-
+    - [Closed Path](#Closed-Path)
+    - [Degree of a Node](#Degree-of-a-Node)
 
 
 ## What is Graph in Data Structure?
