@@ -131,3 +131,9 @@ class DisjointSet {
 }
 
 ```
+
+## References
+- https://www.scaler.com/topics/data-structures/kruskal-algorithm/
+- https://www.scaler.com/topics/prims-and-kruskal-algorithm/
+- https://www.baeldung.com/java-spanning-trees-kruskal
+- https://www.baeldung.com/cs/kruskals-vs-prims-algorithm
