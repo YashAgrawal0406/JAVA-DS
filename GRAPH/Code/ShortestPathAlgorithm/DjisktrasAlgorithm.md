@@ -5,6 +5,7 @@
   - [Code](#Code)
   - [Explanation](#Explanation)
   - [Limitations of the Dijkstra Algorithm](#Limitations-of-the-Dijkstra-Algorithm)
+  - [References](#References)
 
 
 ## Theory
@@ -153,3 +154,8 @@ public class Main {
 - We have already discussed that Dijkstra's algorithm works for non-negative, directed and weighted graphs. If the edge weight is negative, the algorithm won’t work.
 - Since Dijkstra follows a Greedy Approach, once a node is marked as visited it cannot be reconsidered even if there is another path with less cost or distance. This issue persists only if there exists a negative edge weight in the graph.
 - To find the shortest path in a graph having negative edge weight, an alternative Bellman-Ford algorithm is used to find the shortest distance as it stops the loop when it encounters a negative cycle.
+
+
+## Referenes
+- https://www.scaler.com/topics/dijkstras-algorithm-java/
+- https://www.baeldung.com/java-dijkstra
