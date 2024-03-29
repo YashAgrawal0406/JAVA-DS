@@ -49,4 +49,93 @@ Peculiarity of Topological Sort
 <img src="https://github.com/YashAgrawal0406/JAVA-DS/assets/93816952/3e441217-9847-4366-b12c-10d28a2e1d63">
 </p>
 
+> - Let's take a look at this array - [5, 7, 3, 11, 8, 2, 9, 10]. Do you think this array represents the topologically sorted graph? Yes of course! You can picture this array as moving across the graph from top-to-bottom and left to right.
+> - What about this one - [3, 5, 7, 8, 11, 2, 9, 10]? Yes, this one is valid too. As in our previous example, we had two nodes 2, 3 which had the same priority, and the same way here, the nodes 5, 7, 3, and 8, 11 have the same priorities!
+> - How about [7, 5, 11, 3, 10, 8, 9, 2]? Check it for yourself, it's valid.
+> - The last one - [10, 5, 7, 3, 8, 11, 2, 9]? This one isn't valid. Why? Even though the nodes with the same priorities are together, there's one that isn't. The node with the value 10. 10 can not be added to our sorted array before any of the elements that point to it, i.e. 3. 3 must be added to the array first, and only then will 10 be a valid consideration.
+
+
+## Code
+```Java
+//Topological sort
+
+import java.util.ArrayList;
+import java.util.Stack;
+
+public class Main {
+    static class Edge {
+        int src;
+        int dest;
+        public Edge(int s, int d) {
+            this.src = s;
+            this.dest = d;
+        }
+    }
+
+    static void createGraph(ArrayList<Edge> graph[]) {
+        for(int i=0; i<graph.length; i++) {
+            graph[i] = new ArrayList<>();
+        }
+        graph[2].add(new Edge(2, 3));
+
+        graph[3].add(new Edge(3, 1));
+
+        graph[4].add(new Edge(4, 0));
+        graph[4].add(new Edge(4, 1));
+
+        graph[5].add(new Edge(5, 0));
+        graph[5].add(new Edge(5, 2));
+    }
+
+
+    //modified DFS
+    public static void topologySortUtil(ArrayList<Edge> graph[], int curr, boolean vis[], Stack<Integer> stack){
+        vis[curr] = true;
+
+        for (int i = 0; i < graph[curr].size(); i++) {
+            Edge e = graph[curr].get(i);
+            if(!vis[e.dest])
+            {
+                topologySortUtil(graph,e.dest,vis,stack);
+            }
+        }
+        stack.push(curr);
+    }
+
+    public static void topologySort(ArrayList<Edge> graph[],int V){
+        boolean vis[] = new boolean[V];
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = 0; i < V; i++) {
+            if(!vis[i])
+                topologySortUtil(graph,i,vis,stack);
+        }
+
+        while(!stack.isEmpty()){
+            System.out.print(stack.pop() + " ");
+        }
+    }
+
+    public static void main(String args[]) {
+/*
+       5 ------> 0 <------4
+       |                  |
+       |                  |
+       |                  |
+       2 ------->3------->1
+*/
+        int V = 6;
+        ArrayList<Edge> graph[] = new ArrayList[V];
+        createGraph(graph);
+
+        topologySort(graph,V);
+    }
+
+}
+```
+
+
+## References
+- https://www.scaler.com/topics/data-structures/topological-sort-algorithm/
+- https://www.baeldung.com/cs/dag-topological-sort
 
