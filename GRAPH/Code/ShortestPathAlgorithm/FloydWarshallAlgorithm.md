@@ -2,7 +2,6 @@
 - [Topics](#Topics)
   - [Theory](#Theory)
   - [Code](#Code)
-  - [Explanation](#Explanation)
   - [Advantages and Disadvantages](#Advantages-and-Disadvantages)
   - [References](#References)
 
