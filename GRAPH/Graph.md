@@ -1,5 +1,6 @@
 # Topics
 - [Topics](#Topics)
+- [Syllabus](#Syllabus)
   - [What is Graph in Data Structure?](What-is-Graph-in-Data-Structure)
     - [Non-linear Data Structure](#Non-linear-Data-Structure)
   - [Graph Terminology](#Graph-Terminology)
@@ -8,8 +9,8 @@
     - [Path](#Path)
     - [Closed Path](#Closed-Path)
     - [Degree of a Node](#Degree-of-a-Node)
-   
-- [Syllabus](#Syllabus)
+  - [References](#References) 
+
   
 # Syllabus
   - Introduction to Graphs:
@@ -141,8 +142,11 @@ Vertex    In    Out
 6          2    1
 ```
 
-
-
+## References
+- https://www.scaler.com/topics/data-structures/graph-in-data-structure/
+- https://www.scaler.com/topics/graph-algorithms/
+- https://www.scaler.com/topics/data-structures/types-of-graphs-in-data-structure/
+- https://www.scaler.com/topics/graph-in-java/
 
 
 
