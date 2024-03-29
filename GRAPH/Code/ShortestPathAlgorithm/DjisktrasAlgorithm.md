@@ -1,15 +1,24 @@
 # Topics
 
 - [Topics](#Topics)
-  - [Theory](#Code)
+  - [Theory](#Theory)
   - [Code](#Code)
   - [Explanation](#Explanation)
+  - [Limitations of the Dijkstra Algorithm](#Limitations-of-the-Dijkstra-Algorithm)
 
+
+## Theory
+Shortest path
+> Consider you want to travel from city A to city B. There are various routes that you can take to reach your destination. Each road connecting two cities has a weight equal to the distance between the two cities. To cover the distance from city A to city B in the shortest time possible, obviously you will choose the shortest route. The same principle is used in Dijkstra's algorithm.
+
+How Dijkstra's Algorithm Works?
+> Dijkstra's algorithm is used to find the shortest route between the source and the destination. It uses the greedy approach where the shortest path is chosen. The algorithm keeps track of the currently known shortest distance from each node to the source node and it updates these values if it finds a shorter path.
+
+> Also, it works on the principle of relaxation. Here, more accurate values gradually replace an approximation to the correct distance until the shortest distance is reached. It uses a priority queue to store the closest vertex that has not been processed yet and performs relaxation on its outgoing edges.
 
 ## Code
-//Dijkstra's Algorithm
-
 ```Java
+//Dijkstra's Algorithm
 import java.util.*;
 
 public class Main {
@@ -139,3 +148,8 @@ public class Main {
 - Add the source node in the priority queue. Then while the queue is not empty, now we keep removing one edge and add the adjacent edges if they have not been visited and mark them as visited.
 - As we are using a priority queue, the edge with a lesser value will be popped. The adjacent edges are added and the steps are repeated till all nodes are covered.
 ```
+
+## Limitations of the Dijkstra Algorithm
+- We have already discussed that Dijkstra's algorithm works for non-negative, directed and weighted graphs. If the edge weight is negative, the algorithm won’t work.
+- Since Dijkstra follows a Greedy Approach, once a node is marked as visited it cannot be reconsidered even if there is another path with less cost or distance. This issue persists only if there exists a negative edge weight in the graph.
+- To find the shortest path in a graph having negative edge weight, an alternative Bellman-Ford algorithm is used to find the shortest distance as it stops the loop when it encounters a negative cycle.
