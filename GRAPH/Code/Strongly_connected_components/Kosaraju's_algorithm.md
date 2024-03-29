@@ -142,3 +142,7 @@ public class Main {
 
 }
 ```
+
+## References
+- https://www.baeldung.com/cs/kosaraju-algorithm-scc
+- https://www.scaler.com/topics/kosaraju-algorithm/
