@@ -5,7 +5,8 @@
   - [Articulation Point in Graph](#Articulation-Point-in-Graph)
     - [Code](#CodeArticulation) 
   - [References](#References)
- 
+
+There are 2 types of graphs that can be solved using tarjans algorithm
 
 ## Bridge in Graphs
 > Uses DFS algorithm. 
