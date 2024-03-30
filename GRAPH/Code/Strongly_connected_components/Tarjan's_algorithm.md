@@ -1,10 +1,9 @@
 # Topics
 - [Topics](#Topics)
-  - Bridge in Graph
-    - [Code](#Code) 
-  - Articulation Point in Graph
-    - [Code](#Code) 
-  
+  - [Bridge in Graph](#Bridge-in-Graph)
+    - [Code](#CodeBridge) 
+  - [Articulation Point in Graph](#Articulation-Point-in-Graph)
+    - [Code](#CodeArticulation) 
   - [References](#References)
  
 
@@ -16,7 +15,7 @@
 
 > To find bridges in a graph we can use the same approach used to find articulation points. But, since we are removing an edge instead of a vertex to find whether an edge is a bridge or not we use the condition, low[child_node] > discovery_time[current_node]
 
-### Code
+### CodeBridge
 ```Java
 import java.util.ArrayList;
 
@@ -119,7 +118,7 @@ public class BridgeInGraph {
 > Articulation Points in a network represent single points of failure. That is if we remove a vertex that is an articulation point in the network the number of connected components in that network increases. A connected component is defined as a sub-graph or a sub-network in which one node can be reached from every other node by traversing edges. The knowledge of articulation points in a network becomes crucial when building reliable networks without single points of failure. Tarjan’s Algorithm is used to find articulation points in a network efficiently.
 
 > An articulation point is a vertex that when removed (along with it's edges) creates more components in the graph.
-### Code
+### CodeArticulation
 ```Java
 import java.util.ArrayList;
 
@@ -227,3 +226,8 @@ public class ArticulationPoint {
 }
 
 ```
+
+## References
+- https://www.scaler.com/topics/data-structures/articulation-points-and-bridges/
+- https://www.baeldung.com/cs/scc-tarjans-algorithm
+- https://www.scaler.com/topics/data-structures/strongly-connected-components/
