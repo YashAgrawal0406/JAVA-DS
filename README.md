@@ -7,3 +7,8 @@
 
 ## Java
 > https://www.baeldung.com/get-started-with-java-series
+
+
+
+# Links for Note
+- https://www.baeldung.com/cs/deep-vs-shallow-copy
