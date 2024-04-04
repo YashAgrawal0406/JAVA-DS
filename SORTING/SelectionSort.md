@@ -9,6 +9,7 @@
 > Selection sort is a simple sorting algorithm that works by repeatedly selecting the minimum (or maximum) element from an unsorted portion of the list and moving it to the beginning (or end) of the sorted portion. The algorithm divides the input list into two parts: the sorted sublist and the unsorted sublist. Initially, the sorted sublist is empty, and the unsorted sublist contains all the elements. In each iteration, the algorithm finds the smallest element in the unsorted sublist and swaps it with the leftmost unsorted element, thus expanding the sorted sublist by one element. This process continues until the entire list is sorted. Selection sort has a time complexity of O(n^2), making it inefficient for large lists but suitable for small lists or nearly sorted lists due to its simplicity.
 
 `[9, 3, 2, 1, 5]`
+
 <ins>***Iteration 1 (i = 0)***</ins>
 * Find the smallest element in the unsorted list i.e. min(a[i]) where 0 <= i < 5.
 * It can be said that the smallest element is 1 at index 3.
