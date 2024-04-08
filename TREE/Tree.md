@@ -188,6 +188,7 @@ And there are and can be more types of tree data structure, but these are the co
 - [Scaler DS](https://www.scaler.com/topics/data-structures/tree-data-structure/)
 - [Scaler Binary Tree](https://www.scaler.com/topics/data-structures/binary-tree-in-data-structure/)
 - [Scaler Types of Trees in Data Structures](https://www.scaler.com/topics/types-of-trees-in-data-structure/)
+- [simplilearn](https://www.simplilearn.com/tutorials/data-structure-tutorial/trees-in-data-structure#:~:text=In%20a%20tree%20data%20structure,all%20leaf%20nodes%20is%200.)
 
 
 
