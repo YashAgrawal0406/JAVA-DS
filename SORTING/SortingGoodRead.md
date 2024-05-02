@@ -11,3 +11,6 @@
 ### Sorting Algorithms
 > [!IMPORTANT]
 > https://www.interviewbit.com/courses/programming/arrays/sorting-algorithms/
+
+### Medium
+> https://medium.com/@mariam.jaludi/sorting-algorithms-selection-sort-66c3fc8278b9
