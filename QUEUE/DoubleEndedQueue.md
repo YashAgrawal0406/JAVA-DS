@@ -3,6 +3,7 @@
   - [Explanation](#Explanation) 
   - [Code](#Code)
   - [Output](#Output)
+  - [Inbuild Dequeue Collection Framework](#Inbuild-Dequeue-Collection-Framework)
 
 ## Explanation 
 > A Double-ended Queue, or Deque, is a different type of queue where enqueue (insertion) and dequeue (deletion) operations are performed at both ends, i.e., the rear-end (tail) and the front-end (head). The Deque data structure supports clockwise and anticlockwise rotations in O(1) time, which can be useful in certain applications.
@@ -135,4 +136,30 @@ public class Main {
 ```
 4 2 1 3 
 2 1
+```
+
+
+## Inbuild Dequeue Collection Framework
+```Java
+package DequeueCollectionFramework;
+
+import java.util.ArrayDeque;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayDeque<Integer> deque = new ArrayDeque<>();
+
+        deque.addFirst(10);
+        deque.addLast(100);
+        deque.addLast(80);
+        deque.addFirst(20);
+        deque.addFirst(30);
+
+        deque.removeFirst();
+        deque.removeLast();
+
+        System.out.println(deque);
+    }
+
+}
 ```
